@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { getProfile } from '../../services/portfolioService.js';
+import { ClockIcon } from './Icons.jsx';
 import './CvDownloadLink.css';
 
 // Only downloads the CV after confirming it is a real PDF. Without this check a
@@ -14,7 +15,12 @@ async function fetchVerifiedPdf(href) {
   return blob;
 }
 
-export default function CvDownloadLink({ className = '', wrapperClassName = '', children }) {
+export default function CvDownloadLink({
+  className = '',
+  wrapperClassName = '',
+  unavailableLabel = 'CV coming soon',
+  children,
+}) {
   const { cv, email } = getProfile();
   const [status, setStatus] = useState('idle'); // 'idle' | 'loading' | 'error'
   const resetTimer = useRef();
@@ -47,6 +53,18 @@ export default function CvDownloadLink({ className = '', wrapperClassName = '', 
       resetTimer.current = setTimeout(() => setStatus('idle'), 8000);
     }
   };
+
+  // No CV published yet: keep the button in place, but inactive.
+  if (!cv.available) {
+    return (
+      <span className={['cv-link', wrapperClassName].filter(Boolean).join(' ')}>
+        <button type="button" className={className} disabled title="The CV will be available soon">
+          <ClockIcon />
+          {unavailableLabel}
+        </button>
+      </span>
+    );
+  }
 
   return (
     <span className={['cv-link', wrapperClassName].filter(Boolean).join(' ')}>

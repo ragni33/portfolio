@@ -9,11 +9,15 @@ export const profile = {
   intro:
     'I am an MSc Artificial Intelligence student based in Germany with experience across AI research, frontend engineering, data analysis and workflow automation. I enjoy transforming complex problems into practical, structured and user-focused digital solutions.',
   portrait: {
-    src: '/ragni-profile.png',
+    // BASE_URL keeps these working both locally ("/") and on GitHub Pages ("/portfolio/").
+    src: `${import.meta.env.BASE_URL}ragni-profile.png`,
     alt: 'Professional portrait of Ragni Chawala',
   },
   cv: {
-    href: '/Ragni-Chawla-CV.pdf',
+    // Set to false to show "CV coming soon" instead of downloading, e.g. while
+    // public/Ragni-Chawla-CV.pdf is missing or being replaced.
+    available: true,
+    href: `${import.meta.env.BASE_URL}Ragni-Chawla-CV.pdf`,
     fileName: 'Ragni-Chawla-CV.pdf',
   },
   socials: {

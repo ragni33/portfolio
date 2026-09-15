@@ -99,6 +99,13 @@ export const SendIcon = (props) => (
   </Svg>
 );
 
+export const ClockIcon = (props) => (
+  <Svg {...props}>
+    <circle cx="12" cy="12" r="9" />
+    <path d="M12 7v5l3.5 2" />
+  </Svg>
+);
+
 export const SunIcon = (props) => (
   <Svg {...props}>
     <circle cx="12" cy="12" r="4" />

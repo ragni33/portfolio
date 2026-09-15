@@ -69,7 +69,11 @@ export default function Navbar() {
               </li>
             ))}
           </ul>
-          <CvDownloadLink className="btn btn--ghost nav__cta" wrapperClassName="nav__cta-wrap">
+          <CvDownloadLink
+            className="btn btn--ghost nav__cta"
+            wrapperClassName="nav__cta-wrap"
+            unavailableLabel="CV soon"
+          >
             <DownloadIcon />
             CV
             <span className="visually-hidden"> (PDF download)</span>

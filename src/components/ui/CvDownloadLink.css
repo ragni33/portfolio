@@ -3,6 +3,27 @@
   display: inline-flex;
 }
 
+/* "CV coming soon": same size and weight as the real button, just quieter and
+   not clickable — no fading, so the label stays perfectly readable. */
+.cv-link .btn:disabled {
+  border-style: dashed;
+  border-color: var(--line-strong);
+  background-color: var(--chip-bg);
+  color: var(--text-muted);
+  cursor: default;
+}
+
+.cv-link .btn:disabled:hover,
+.cv-link .btn:disabled:active {
+  border-color: var(--line-strong);
+  background-color: var(--chip-bg);
+  transform: none;
+}
+
+.cv-link .btn:disabled svg {
+  transform: none;
+}
+
 .cv-link__message {
   position: absolute;
   top: calc(100% + 0.5rem);
