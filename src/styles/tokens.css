@@ -1,0 +1,215 @@
+/* =========================================================
+   Design tokens
+   Theme is controlled by `data-theme` on <html>:
+     data-theme="dark"  → dark
+     data-theme="light" → light
+     (no attribute)     → follows the operating-system setting
+   ========================================================= */
+
+:root {
+  /* ---------- Primitive colours ---------- */
+  --navy-950: #060d18;
+  --navy-900: #0a1322;
+  --navy-850: #0d182a;
+  --navy-800: #111f34;
+  --navy-700: #1a2b45;
+
+  --teal-300: #7fdcd1;
+  --teal-400: #4cc5b8;
+  --teal-500: #2fb3a6;
+  --teal-600: #208c82;
+  --teal-700: #1b8277;
+  --teal-800: #146a62;
+
+  --warm-50: #f4efe6;
+  --warm-100: #e8e2d6;
+  --warm-300: #bdb7ab;
+  --slate-400: #8e99aa;
+  --slate-500: #6c7789;
+
+  --amber-400: #d9b36c;
+  --blue-400: #93acd8;
+
+  /* ---------- Typography ---------- */
+  --font-display: 'Fraunces', 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+  --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'Cascadia Code', Consolas, monospace;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-md: 1.0625rem;
+  --text-lg: 1.1875rem;
+  --text-xl: clamp(1.35rem, 1.1rem + 0.8vw, 1.6rem);
+  --text-2xl: clamp(1.9rem, 1.4rem + 1.8vw, 2.75rem);
+  --text-hero: clamp(2.9rem, 1.9rem + 4.4vw, 5.4rem);
+
+  /* ---------- Spacing & layout ---------- */
+  --container: 1180px;
+  --gutter: clamp(1.25rem, 4vw, 2.5rem);
+  --section-space: clamp(5rem, 4rem + 5vw, 8.5rem);
+  --nav-height: 72px;
+
+  --radius-sm: 6px;
+  --radius: 12px;
+  --radius-lg: 18px;
+
+  /* ---------- Motion ---------- */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration: 220ms;
+  --duration-slow: 700ms;
+
+  /* ---------- Semantic colours: dark (default) ---------- */
+  color-scheme: dark;
+
+  --bg: var(--navy-900);
+  --bg-deep: var(--navy-950);
+  --surface: var(--navy-850);
+  --surface-raised: var(--navy-800);
+  --input-bg: var(--navy-950);
+  --nav-bg: rgba(10, 19, 34, 0.84);
+  --glass: rgba(10, 19, 34, 0.6);
+  --glass-strong: rgba(13, 24, 42, 0.9);
+
+  --text: var(--warm-50);
+  --text-soft: var(--warm-100);
+  --text-muted: var(--slate-400);
+  --text-faint: var(--slate-500);
+
+  --accent: var(--teal-400);
+  --accent-text: var(--teal-300);
+  --accent-strong: var(--teal-500);
+  --accent-hover: var(--teal-400);
+  --on-accent: var(--navy-950);
+  --teal-tint: rgba(47, 179, 166, 0.1);
+  --teal-tint-strong: rgba(47, 179, 166, 0.18);
+  --glow: rgba(47, 179, 166, 0.11);
+  --hover-border: rgba(76, 197, 184, 0.35);
+  --focus: var(--teal-300);
+
+  --line: rgba(244, 239, 230, 0.08);
+  --line-strong: rgba(244, 239, 230, 0.15);
+  --line-hover: rgba(244, 239, 230, 0.25);
+  --grid-line: rgba(244, 239, 230, 0.045);
+  --dot: rgba(244, 239, 230, 0.14);
+  --chip-bg: rgba(244, 239, 230, 0.03);
+
+  --amber: var(--amber-400);
+  --amber-border: rgba(217, 179, 108, 0.32);
+  --amber-tint: rgba(217, 179, 108, 0.1);
+  --blue-tint: rgba(147, 172, 216, 0.1);
+  --badge-teal: var(--teal-300);
+  --badge-amber: var(--amber-400);
+  --badge-blue: var(--blue-400);
+
+  --danger-border: #e0907f;
+  --danger-text: #eeaa9c;
+
+  --shadow-card: 0 1px 0 rgba(244, 239, 230, 0.04) inset, 0 18px 40px -24px rgba(0, 0, 0, 0.6);
+  --shadow-float: 0 24px 48px -24px rgba(0, 0, 0, 0.75);
+}
+
+/* ---------- Semantic colours: light ---------- */
+
+:root[data-theme='light'] {
+  color-scheme: light;
+
+  --bg: #f7f4ee;
+  --bg-deep: #efeae1;
+  --surface: #fffdf9;
+  --surface-raised: #ffffff;
+  --input-bg: #fbf9f5;
+  --nav-bg: rgba(247, 244, 238, 0.86);
+  --glass: rgba(255, 253, 249, 0.72);
+  --glass-strong: rgba(255, 253, 249, 0.94);
+
+  --text: #0d1a2c;
+  --text-soft: #243247;
+  --text-muted: #556273;
+  --text-faint: #6a7585;
+
+  --accent: var(--teal-700);
+  --accent-text: var(--teal-800);
+  --accent-strong: var(--teal-700);
+  --accent-hover: var(--teal-800);
+  --on-accent: #ffffff;
+  --teal-tint: rgba(27, 130, 119, 0.08);
+  --teal-tint-strong: rgba(27, 130, 119, 0.16);
+  --glow: rgba(27, 130, 119, 0.08);
+  --hover-border: rgba(27, 130, 119, 0.4);
+  --focus: var(--teal-700);
+
+  --line: rgba(13, 26, 44, 0.09);
+  --line-strong: rgba(13, 26, 44, 0.16);
+  --line-hover: rgba(13, 26, 44, 0.28);
+  --grid-line: rgba(13, 26, 44, 0.05);
+  --dot: rgba(13, 26, 44, 0.14);
+  --chip-bg: rgba(13, 26, 44, 0.03);
+
+  --amber: #b07d1f;
+  --amber-border: rgba(176, 125, 31, 0.4);
+  --amber-tint: rgba(176, 125, 31, 0.09);
+  --blue-tint: rgba(59, 91, 149, 0.08);
+  --badge-teal: var(--teal-800);
+  --badge-amber: #8a6114;
+  --badge-blue: #3b5b95;
+
+  --danger-border: #c2553f;
+  --danger-text: #a8402b;
+
+  --shadow-card: 0 1px 2px rgba(13, 26, 44, 0.04), 0 12px 32px -20px rgba(13, 26, 44, 0.18);
+  --shadow-float: 0 20px 40px -20px rgba(13, 26, 44, 0.25);
+}
+
+/* System default: use the light palette when the OS prefers light */
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme='dark']) {
+    color-scheme: light;
+
+    --bg: #f7f4ee;
+    --bg-deep: #efeae1;
+    --surface: #fffdf9;
+    --surface-raised: #ffffff;
+    --input-bg: #fbf9f5;
+    --nav-bg: rgba(247, 244, 238, 0.86);
+    --glass: rgba(255, 253, 249, 0.72);
+    --glass-strong: rgba(255, 253, 249, 0.94);
+
+    --text: #0d1a2c;
+    --text-soft: #243247;
+    --text-muted: #556273;
+    --text-faint: #6a7585;
+
+    --accent: var(--teal-700);
+    --accent-text: var(--teal-800);
+    --accent-strong: var(--teal-700);
+    --accent-hover: var(--teal-800);
+    --on-accent: #ffffff;
+    --teal-tint: rgba(27, 130, 119, 0.08);
+    --teal-tint-strong: rgba(27, 130, 119, 0.16);
+    --glow: rgba(27, 130, 119, 0.08);
+    --hover-border: rgba(27, 130, 119, 0.4);
+    --focus: var(--teal-700);
+
+    --line: rgba(13, 26, 44, 0.09);
+    --line-strong: rgba(13, 26, 44, 0.16);
+    --line-hover: rgba(13, 26, 44, 0.28);
+    --grid-line: rgba(13, 26, 44, 0.05);
+    --dot: rgba(13, 26, 44, 0.14);
+    --chip-bg: rgba(13, 26, 44, 0.03);
+
+    --amber: #b07d1f;
+    --amber-border: rgba(176, 125, 31, 0.4);
+    --amber-tint: rgba(176, 125, 31, 0.09);
+    --blue-tint: rgba(59, 91, 149, 0.08);
+    --badge-teal: var(--teal-800);
+    --badge-amber: #8a6114;
+    --badge-blue: #3b5b95;
+
+    --danger-border: #c2553f;
+    --danger-text: #a8402b;
+
+    --shadow-card: 0 1px 2px rgba(13, 26, 44, 0.04), 0 12px 32px -20px rgba(13, 26, 44, 0.18);
+    --shadow-float: 0 20px 40px -20px rgba(13, 26, 44, 0.25);
+  }
+}

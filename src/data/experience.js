@@ -1,0 +1,45 @@
+export const experience = [
+  {
+    id: 'working-student-ai',
+    role: 'Working Student – AI, Data & Automation',
+    organisation: 'Oceyon',
+    period: 'August 2026 – Present',
+    location: 'Berlin / Remote',
+    current: true,
+    highlights: [
+      'Developing prototypes for business intelligence and AI-assisted research workflows',
+      'Structuring and analyzing data for market and competitor intelligence',
+      'Supporting automation, technical documentation and cross-functional project delivery',
+      'Exploring React, Node.js, PostgreSQL and API-based application architecture',
+    ],
+    tags: ['Business Intelligence', 'Market & Competitor Intelligence', 'Automation', 'Technical Documentation'],
+  },
+  {
+    id: 'exzellent-research-intern',
+    role: 'Research Intern – Artificial Intelligence',
+    organisation: 'Exzellent',
+    period: 'January 2026 – April 2026',
+    location: 'Remote, Germany',
+    current: false,
+    highlights: [
+      'Supported generative AI experimentation for language coaching and personalized feedback',
+      'Prototyped and evaluated conversational AI agents for educational applications',
+      'Used PyTorch, Hugging Face Transformers, GitHub, Kaggle and collaboration tools',
+    ],
+    tags: ['Generative AI', 'Conversational AI', 'PyTorch', 'Hugging Face', 'Kaggle'],
+  },
+  {
+    id: 'exceed-frontend-engineer',
+    role: 'Frontend Engineer',
+    organisation: 'Exceed Technologies',
+    period: 'October 2023 – August 2024',
+    location: 'Remote, Pakistan',
+    current: false,
+    highlights: [
+      'Developed and maintained frontend features for web applications',
+      'Collaborated with developers and stakeholders on feature implementation',
+      'Used Jira and Git-based version control in a remote development environment',
+    ],
+    tags: ['Frontend Development', 'Git', 'Jira', 'Remote Collaboration'],
+  },
+];

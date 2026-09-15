@@ -1,0 +1,67 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# Build output
+dist/
+dist-ssr/
+build/
+out/
+coverage/
+*.local
+
+# Vite
+.vite/
+vite.config.js.timestamp-*
+vite.config.mjs.timestamp-*
+
+# Environment variables (keep .env.example committed)
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Caches
+.cache/
+.eslintcache
+.stylelintcache
+.parcel-cache/
+*.tsbuildinfo
+
+# Future backend (Node.js / Express)
+server/node_modules/
+server/.env
+uploads/
+tmp/
+temp/
+
+# Editors & IDEs
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/

@@ -1,0 +1,84 @@
+.edu__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: clamp(2.5rem, 5vw, 4rem);
+  list-style: none;
+}
+
+.edu__item {
+  display: flex;
+}
+
+.edu-card {
+  display: grid;
+  flex: 1;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 1.25rem;
+  padding: clamp(1.5rem, 3vw, 2.1rem);
+}
+
+.edu-card__icon {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border: 1px solid var(--hover-border);
+  border-radius: 12px;
+  background-color: var(--teal-tint);
+  color: var(--accent-text);
+}
+
+.edu-card__icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.edu-card__top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.75rem;
+  min-height: 26px;
+}
+
+.edu-card__period {
+  color: var(--text-muted);
+}
+
+.edu-card h3 {
+  margin-top: 0.8rem;
+  font-size: var(--text-xl);
+  font-weight: 400;
+}
+
+.edu-card__institution {
+  margin-top: 0.4rem;
+  color: var(--text-soft);
+}
+
+.edu-card__location {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 1rem;
+  color: var(--text-muted);
+  font-size: var(--text-sm);
+}
+
+.edu-card__location svg {
+  width: 14px;
+  height: 14px;
+}
+
+@media (max-width: 860px) {
+  .edu__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .edu-card {
+    grid-template-columns: 1fr;
+  }
+}

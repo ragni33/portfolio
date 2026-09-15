@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Ragni Chawla — AI, Data &amp; Automation | MSc Artificial Intelligence</title>
+    <meta
+      name="description"
+      content="Portfolio of Ragni Chawla, an MSc Artificial Intelligence student based in Berlin with experience across AI research, frontend engineering, data analysis and workflow automation."
+    />
+    <meta name="author" content="Ragni Chawla" />
+    <meta name="theme-color" content="#0a1322" />
+    <meta name="color-scheme" content="dark" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Ragni Chawla" />
+    <meta property="og:title" content="Ragni Chawla — AI, Data &amp; Automation" />
+    <meta
+      property="og:description"
+      content="MSc Artificial Intelligence student in Berlin working across AI research, frontend engineering, data analysis and workflow automation."
+    />
+    <meta property="og:image" content="/ragni-profile.png" />
+    <meta property="og:image:alt" content="Portrait of Ragni Chawla" />
+    <meta property="og:locale" content="en_GB" />
+    <!-- TODO: add og:url and a canonical link once the site has a public domain -->
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ragni Chawla — AI, Data &amp; Automation" />
+    <meta
+      name="twitter:description"
+      content="MSc Artificial Intelligence student in Berlin working across AI research, frontend engineering, data analysis and workflow automation."
+    />
+    <meta name="twitter:image" content="/ragni-profile.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Ragni Chawla",
+        "jobTitle": "AI, Data & Automation",
+        "email": "mailto:ragnichawla3@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Berlin",
+          "addressCountry": "DE"
+        },
+        "alumniOf": [
+          { "@type": "CollegeOrUniversity", "name": "IQRA University" }
+        ],
+        "sameAs": ["https://www.linkedin.com/in/ragni-chawla-385245198/"]
+      }
+    </script>
+  </head>
+  <body>
+    <noscript>
+      Ragni Chawla — AI, Data &amp; Automation. Please enable JavaScript to view this portfolio,
+      or contact ragnichawla3@gmail.com.
+    </noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.2rem 0.62rem;
+  border: 1px solid;
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.badge__dot {
+  position: relative;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+
+.badge--pulse .badge__dot::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background-color: currentColor;
+  animation: pulse-ring 2.4s var(--ease-out) infinite;
+}
+
+.badge--teal {
+  border-color: var(--hover-border);
+  background-color: var(--teal-tint);
+  color: var(--badge-teal);
+}
+
+.badge--amber {
+  border-color: var(--amber-border);
+  background-color: var(--amber-tint);
+  color: var(--badge-amber);
+}
+
+.badge--blue {
+  border-color: rgba(120, 150, 205, 0.4);
+  background-color: var(--blue-tint);
+  color: var(--badge-blue);
+}
+
+.badge--neutral {
+  border-color: var(--line-strong);
+  background-color: var(--chip-bg);
+  color: var(--text-muted);
+}

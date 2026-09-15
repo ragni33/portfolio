@@ -1,0 +1,78 @@
+.certs__list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: clamp(2.5rem, 5vw, 4rem);
+  list-style: none;
+}
+
+.certs__item {
+  display: flex;
+}
+
+.cert-card {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 1.6rem;
+}
+
+.cert-card__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cert-card__icon {
+  color: var(--accent-text);
+}
+
+.cert-card__icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.cert-card__index {
+  color: var(--text-faint);
+}
+
+.cert-card h3 {
+  font-family: var(--font-body);
+  font-size: var(--text-lg);
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+
+.cert-card__issuer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.25rem 1rem;
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px dashed var(--line);
+  color: var(--text-soft);
+  font-size: var(--text-sm);
+}
+
+.cert-card__issuer .mono {
+  color: var(--text-faint);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1023px) {
+  .certs__list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .certs__list {
+    grid-template-columns: 1fr;
+  }
+}
