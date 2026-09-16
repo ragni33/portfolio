@@ -21,17 +21,16 @@ export const projects = [
     stack: ['React', 'JavaScript', 'Node.js', 'Express', 'REST APIs', 'PostgreSQL'],
   },
   {
-    id: 'local-ai-visibility-auditor',
-    title: 'Local AI Visibility Auditor',
-    status: 'prototype',
-    summary:
-      'A privacy-focused system for checking AI-generated answers against a set of approved facts.',
+    id: 'personal-finance-tracker',
+    title: 'Personal Finance Tracker',
+    status: null,
+    summary: 'A responsive React dashboard for tracking income, expenses and monthly spending patterns.',
     points: [
-      'Records AI answers, compares them with approved facts and flags inconsistencies',
-      'Designed around React, Node.js, Express and PostgreSQL',
-      'Supports structured GEO and AI visibility analysis without unnecessary external API costs',
+      'Added transaction creation, editing, deletion, category filtering and calculated balances',
+      'Created visual spending summaries using reusable React components and charts',
+      'Used localStorage to preserve user data between browser sessions',
     ],
-    stack: ['React', 'Node.js', 'Express', 'PostgreSQL', 'GEO'],
+    stack: ['React', 'JavaScript', 'Chart.js', 'CSS3', 'LocalStorage'],
   },
   {
     id: 'react-ecommerce-frontend',
