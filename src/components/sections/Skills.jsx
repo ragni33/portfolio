@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { skillLevels } from '../../data/index.js';
 import { getSkillCategories } from '../../services/portfolioService.js';
 import Reveal from '../ui/Reveal.jsx';
 import SectionHeading from '../ui/SectionHeading.jsx';
@@ -22,23 +21,11 @@ export default function Skills() {
           index="02"
           eyebrow="Technical skills"
           titleId="skills-title"
-          title="Tools and methods, grouped by area."
-          intro="Solid markers show skills I have used in professional, research or academic work. Outlined amber markers show technologies I am currently learning and developing."
+          title="Technical skills for building intelligent digital solutions."
+          intro="A practical toolkit spanning frontend development, AI experimentation, data analysis and workflow automation."
         />
 
         <Reveal className="skills__toolbar">
-          <ul className="skills__legend" aria-label="Legend">
-            {Object.entries(skillLevels).map(([level, info]) => (
-              <li key={level}>
-                <span className={`skill-marker skill-marker--${level}`} aria-hidden="true" />
-                <span>
-                  <strong>{info.label}</strong>
-                  <span className="skills__legend-desc"> — {info.description}</span>
-                </span>
-              </li>
-            ))}
-          </ul>
-
           <div className="skills__filters" role="group" aria-label="Highlight skills by level">
             {filters.map((item) => (
               <button

@@ -9,41 +9,6 @@
   border-bottom: 1px solid var(--line);
 }
 
-.skills__legend {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.6rem 1.75rem;
-  color: var(--text-muted);
-  font-size: var(--text-sm);
-  list-style: none;
-}
-
-.skills__legend li {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
-}
-
-.skills__legend strong {
-  color: var(--text-soft);
-  font-weight: 500;
-}
-
-.skill-marker {
-  flex-shrink: 0;
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-}
-
-.skill-marker--applied {
-  background-color: var(--accent);
-}
-
-.skill-marker--developing {
-  border: 1.5px solid var(--amber);
-}
-
 .skills__filters {
   display: inline-flex;
   gap: 2px;

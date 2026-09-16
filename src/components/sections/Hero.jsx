@@ -31,26 +31,6 @@ function Portrait({ src, alt }) {
         </div>
         <span className="portrait__corner portrait__corner--tl" aria-hidden="true" />
         <span className="portrait__corner portrait__corner--br" aria-hidden="true" />
-
-        <div className="hero__readout">
-          <p className="hero__readout-title" aria-hidden="true">
-            {'// profile'}
-          </p>
-          <dl>
-            <div>
-              <dt>focus</dt>
-              <dd>AI · Data · Automation</dd>
-            </div>
-            <div>
-              <dt>study</dt>
-              <dd>MSc Artificial Intelligence</dd>
-            </div>
-            <div>
-              <dt>base</dt>
-              <dd>Berlin, DE</dd>
-            </div>
-          </dl>
-        </div>
       </div>
       <figcaption className="portrait__caption mono">
         <span>52.52° N · 13.40° E</span>

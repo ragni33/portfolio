@@ -4,12 +4,6 @@ import Reveal from '../ui/Reveal.jsx';
 import SectionHeading from '../ui/SectionHeading.jsx';
 import './About.css';
 
-const facts = [
-  { label: 'Location', value: 'Berlin, Germany' },
-  { label: 'Studying', value: 'MSc Artificial Intelligence' },
-  { label: 'Background', value: 'Computer Science' },
-];
-
 export default function About() {
   const profile = getProfile();
 
@@ -32,15 +26,6 @@ export default function About() {
               at Brandenburg University of Technology Cottbus-Senftenberg, I work as a working student in
               AI, data and automation.
             </p>
-
-            <dl className="about__facts">
-              {facts.map((fact) => (
-                <div key={fact.label}>
-                  <dt className="mono">{fact.label}</dt>
-                  <dd>{fact.value}</dd>
-                </div>
-              ))}
-            </dl>
           </Reveal>
 
           <Reveal as="ul" className="about__focus" delay={120} aria-label="Areas of focus">
