@@ -144,6 +144,8 @@
   /* Hug the text column, so the gap stays the same even when the photo is
      sized down to fit a shorter laptop screen. */
   justify-self: end;
+  /* Small nudge left, away from the text. */
+  margin-right: 1.25rem;
   width: 100%;
   max-width: min(580px, calc((100svh - 12rem) * 0.8));
 }
@@ -310,6 +312,7 @@
   .hero__visual {
     order: 0;
     justify-self: start;
+    margin-right: 0;
     /* Keep the whole photo, including the face, within one phone screen. */
     max-width: min(500px, 100%, calc(60svh * 0.8));
   }
