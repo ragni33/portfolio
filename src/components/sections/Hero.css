@@ -42,9 +42,11 @@
 .hero__inner {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  /* Photo and text are sized to their content and centred together as one group. */
+  grid-template-columns: auto minmax(0, 34rem);
+  justify-content: center;
   align-items: center;
-  gap: clamp(2rem, 4.5vw, 4.5rem);
+  gap: clamp(2.5rem, 5vw, 4.5rem);
 }
 
 /* ---------- Content ---------- */
@@ -141,13 +143,7 @@
    which keeps the hero on screen on shorter laptops. */
 .hero__visual {
   order: -1;
-  /* Hug the text column, so the gap stays the same even when the photo is
-     sized down to fit a shorter laptop screen. */
-  justify-self: end;
-  /* Small nudge left, away from the text. */
-  margin-right: 2.5rem;
-  width: 100%;
-  max-width: min(580px, calc((100svh - 12rem) * 0.8));
+  width: min(580px, calc((100svh - 12rem) * 0.8), 44vw);
 }
 
 .portrait {
@@ -311,8 +307,10 @@
 
   .hero__visual {
     order: 0;
-    justify-self: start;
-    margin-right: 0;
+    /* Centred: the photo is often narrower than the screen once it is sized
+       to fit the phone's visible height. */
+    justify-self: center;
+    width: 100%;
     /* Keep the whole photo, including the face, within one phone screen. */
     max-width: min(500px, 100%, calc(60svh * 0.8));
   }
