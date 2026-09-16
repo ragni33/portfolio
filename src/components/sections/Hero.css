@@ -145,7 +145,7 @@
      sized down to fit a shorter laptop screen. */
   justify-self: end;
   /* Small nudge left, away from the text. */
-  margin-right: 1.25rem;
+  margin-right: 2.5rem;
   width: 100%;
   max-width: min(580px, calc((100svh - 12rem) * 0.8));
 }
