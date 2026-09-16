@@ -53,6 +53,6 @@ export const projects = [
       'Implemented task creation, editing, deletion and status filtering',
       'Used hooks-based state and localStorage so tasks persist between sessions',
     ],
-    stack: ['React', 'React Hooks', 'JavaScript', 'LocalStorage'],
+    stack: ['React', 'React Hooks', 'JavaScript'],
   },
 ];
