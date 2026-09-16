@@ -15,7 +15,7 @@ export default function Experience() {
           index="03"
           eyebrow="Professional experience"
           titleId="experience-title"
-          title="Research, engineering and data work."
+          title="Experience at the intersection of AI, engineering and data."
         />
 
         <ol className="timeline">
