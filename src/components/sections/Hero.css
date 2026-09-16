@@ -141,12 +141,11 @@
    which keeps the hero on screen on shorter laptops. */
 .hero__visual {
   order: -1;
-  justify-self: start;
+  /* Hug the text column, so the gap stays the same even when the photo is
+     sized down to fit a shorter laptop screen. */
+  justify-self: end;
   width: 100%;
   max-width: min(580px, calc((100svh - 12rem) * 0.8));
-  /* Sits closer to the screen edge on wide screens, but never nearer than 24px,
-     and not shifted at all once the window is narrow. */
-  margin-left: calc(-1 * clamp(0px, (100vw - 1260px) / 2 - 24px, 4.5rem));
 }
 
 .portrait {
