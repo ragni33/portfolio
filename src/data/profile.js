@@ -7,7 +7,7 @@ export const profile = {
   location: 'Berlin, Germany',
   email: 'ragnichawla3@gmail.com',
   intro:
-    'I am an MSc Artificial Intelligence student based in Germany with experience across AI research, frontend engineering, data analysis and workflow automation. I enjoy transforming complex problems into practical, structured and user-focused digital solutions.',
+    'I am an MSc student in Artificial Intelligence based in Germany, with experience in AI research, frontend engineering, data analysis, and workflow automation. I enjoy transforming complex problems into practical, structured, and user-focused digital solutions.',
   portrait: {
     // BASE_URL keeps these working both locally ("/") and on GitHub Pages ("/portfolio/").
     src: `${import.meta.env.BASE_URL}ragni-profile.png`,
