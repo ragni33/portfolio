@@ -32,10 +32,6 @@ function Portrait({ src, alt }) {
         <span className="portrait__corner portrait__corner--tl" aria-hidden="true" />
         <span className="portrait__corner portrait__corner--br" aria-hidden="true" />
       </div>
-      <figcaption className="portrait__caption mono">
-        <span>52.52° N · 13.40° E</span>
-        <span>Berlin</span>
-      </figcaption>
     </figure>
   );
 }
